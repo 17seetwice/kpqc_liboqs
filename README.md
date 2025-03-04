@@ -218,3 +218,4 @@ Financial support for the development of Open Quantum Safe has been provided by 
 Research projects which developed specific components of OQS have been supported by various research grants, including funding from the Natural Sciences and Engineering Research Council of Canada (NSERC); see the source papers for funding acknowledgments.
 # kpqc_liboqs
 # kpqc_liboqs
+# kpqc_liboqs
