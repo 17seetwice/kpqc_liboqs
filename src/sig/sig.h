@@ -84,6 +84,12 @@ extern "C" {
 #define OQS_SIG_alg_mayo_3 "MAYO-3"
 /** Algorithm identifier for MAYO-5 */
 #define OQS_SIG_alg_mayo_5 "MAYO-5"
+/** Algorithm identifier for HAETAE-120 */
+#define OQS_SIG_alg_haetae_120 "HAETAE-120"
+/** Algorithm identifier for HAETAE-180 */
+#define OQS_SIG_alg_haetae_180 "HAETAE-180"
+/** Algorithm identifier for HAETAE-260 */
+#define OQS_SIG_alg_haetae_260 "HAETAE-260"
 /** Algorithm identifier for cross-rsdp-128-balanced */
 #define OQS_SIG_alg_cross_rsdp_128_balanced "cross-rsdp-128-balanced"
 /** Algorithm identifier for cross-rsdp-128-fast */
@@ -377,6 +383,9 @@ OQS_API void OQS_SIG_free(OQS_SIG *sig);
 #ifdef OQS_ENABLE_SIG_MAYO
 #include <oqs/sig_mayo.h>
 #endif /* OQS_ENABLE_SIG_MAYO */
+#ifdef OQS_ENABLE_SIG_HAETAE
+#include <oqs/sig_haetae.h>
+#endif /* OQS_ENABLE_SIG_HAETAE */
 #ifdef OQS_ENABLE_SIG_CROSS
 #include <oqs/sig_cross.h>
 #endif /* OQS_ENABLE_SIG_CROSS */

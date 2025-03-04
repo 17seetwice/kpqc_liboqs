@@ -76,6 +76,12 @@ extern "C" {
 #define OQS_KEM_alg_ml_kem_768 "ML-KEM-768"
 /** Algorithm identifier for ML-KEM-1024 KEM. */
 #define OQS_KEM_alg_ml_kem_1024 "ML-KEM-1024"
+/** Algorithm identifier for SMAUG-T-1 KEM. */
+#define OQS_KEM_alg_smaug_t_1 "SMAUG-T-1"
+/** Algorithm identifier for SMAUG-T-3 KEM. */
+#define OQS_KEM_alg_smaug_t_3 "SMAUG-T-3"
+/** Algorithm identifier for SMAUG-T-5 KEM. */
+#define OQS_KEM_alg_smaug_t_5 "SMAUG-T-5"
 ///// OQS_COPY_FROM_UPSTREAM_FRAGMENT_ALG_IDENTIFIER_END
 /** Algorithm identifier for sntrup761 KEM. */
 #define OQS_KEM_alg_ntruprime_sntrup761 "sntrup761"
@@ -286,6 +292,9 @@ OQS_API void OQS_KEM_free(OQS_KEM *kem);
 #ifdef OQS_ENABLE_KEM_FRODOKEM
 #include <oqs/kem_frodokem.h>
 #endif /* OQS_ENABLE_KEM_FRODOKEM */
+#ifdef OQS_ENABLE_KEM_SMAUG_T
+#include <oqs/kem_smaug_t.h>
+#endif /* OQS_ENABLE_KEM_SMAUG_T */
 // EDIT-WHEN-ADDING-KEM
 
 #if defined(__cplusplus)
