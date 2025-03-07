@@ -4,7 +4,7 @@
 
 #include <oqs/kem_smaug_t.h>
 
-#if defined(OQS_ENABLE_KEM_SMAUG_T_1)
+#if defined(OQS_ENABLE_KEM_smaug_t_1)
 
 OQS_KEM *OQS_KEM_smaug_t_1_new(void) {
 
