@@ -132,6 +132,11 @@ cmake_dependent_option(OQS_ENABLE_KEM_ml_kem_512 "" ON "OQS_ENABLE_KEM_ML_KEM" O
 cmake_dependent_option(OQS_ENABLE_KEM_ml_kem_768 "" ON "OQS_ENABLE_KEM_ML_KEM" OFF)
 cmake_dependent_option(OQS_ENABLE_KEM_ml_kem_1024 "" ON "OQS_ENABLE_KEM_ML_KEM" OFF)
 
+option(OQS_ENABLE_KEM_SMAUG_T "Enable smaug_t algorithm family" ON)
+cmake_dependent_option(OQS_ENABLE_KEM_smaug_t_1 "" ON "OQS_ENABLE_KEM_SMAUG_T" OFF)
+cmake_dependent_option(OQS_ENABLE_KEM_smaug_t_3 "" ON "OQS_ENABLE_KEM_SMAUG_T" OFF)
+cmake_dependent_option(OQS_ENABLE_KEM_smaug_t_5 "" ON "OQS_ENABLE_KEM_SMAUG_T" OFF)
+
 option(OQS_ENABLE_SIG_DILITHIUM "Enable dilithium algorithm family" ON)
 cmake_dependent_option(OQS_ENABLE_SIG_dilithium_2 "" ON "OQS_ENABLE_SIG_DILITHIUM" OFF)
 cmake_dependent_option(OQS_ENABLE_SIG_dilithium_3 "" ON "OQS_ENABLE_SIG_DILITHIUM" OFF)
@@ -187,6 +192,12 @@ cmake_dependent_option(OQS_ENABLE_SIG_cross_rsdpg_192_small "" ON "OQS_ENABLE_SI
 cmake_dependent_option(OQS_ENABLE_SIG_cross_rsdpg_256_balanced "" ON "OQS_ENABLE_SIG_CROSS" OFF)
 cmake_dependent_option(OQS_ENABLE_SIG_cross_rsdpg_256_fast "" ON "OQS_ENABLE_SIG_CROSS" OFF)
 cmake_dependent_option(OQS_ENABLE_SIG_cross_rsdpg_256_small "" ON "OQS_ENABLE_SIG_CROSS" OFF)
+
+option(OQS_ENABLE_SIG_HAETAE "Enable haetae algorithm family" ON)
+cmake_dependent_option(OQS_ENABLE_SIG_haetae_120 "" ON "OQS_ENABLE_SIG_HAETAE" OFF)
+cmake_dependent_option(OQS_ENABLE_SIG_haetae_180 "" ON "OQS_ENABLE_SIG_HAETAE" OFF)
+cmake_dependent_option(OQS_ENABLE_SIG_haetae_260 "" ON "OQS_ENABLE_SIG_HAETAE" OFF)
+
 ##### OQS_COPY_FROM_UPSTREAM_FRAGMENT_ADD_ENABLE_BY_ALG_END
 
 ##### OQS_COPY_FROM_LIBJADE_FRAGMENT_ADD_ENABLE_BY_ALG_START
