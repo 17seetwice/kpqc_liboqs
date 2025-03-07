@@ -47,7 +47,7 @@ if(OQS_ENABLE_SIG_haetae_180)
     kpqc_haetae_180/sampler.c
     kpqc_haetae_180/sign.c
     kpqc_haetae_180/symmetric-shake.c)
-    target_compile_options(haetae_180_ref PUBLIC -DHAETAE_MODE==3)
+    target_compile_options(haetae_180_ref PUBLIC -DHAETAE_MODE=3)
     target_include_directories(haetae_180_ref PRIVATE ${CMAKE_CURRENT_LIST_DIR}/kpqc_haetae_180)
     target_include_directories(haetae_180_ref PRIVATE ${PROJECT_SOURCE_DIR}/src/common/pqclean_shims)
     target_compile_options(haetae_180_ref PUBLIC -DHAETAE_MODE=3)
